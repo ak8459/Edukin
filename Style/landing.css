@@ -1,0 +1,468 @@
+@font-face {
+    font-family: 'gyahegi';
+    src: url('https://fontbundles.net/hishand-studio/1275290-gyahegi-serif-font');
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#user-name {
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+  }
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    height: 80px;
+    margin-bottom: 3%;
+}
+
+#mid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#logo img {
+    height: 90px;
+    margin-left: 10px;
+    
+}
+
+/* ----------card/1------------ */
+
+/* Left C img */
+.Edu-2{ 
+    position: absolute;
+    margin-top: -105%;
+    margin-left: 40%;
+    height: 300px;
+}
+/* C-Shape */
+.c-shape {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 500px;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 250px;
+    border: 2px solid black;
+    border-left: none;
+  }
+  .c-shape-1 {
+    width: 150px;
+    height: 300px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border: 2px solid black;
+    border-left: none;
+  }
+  .connect-top{
+    border: 1px solid black;
+    height: 105px;
+    margin-top: -160%;
+  }
+  .connect-bottom{
+    border: 1px solid black;
+    height: 105px;
+    margin-bottom: -160%;
+  }
+
+  /* Card part */
+#card-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ------------------------- */
+
+/* B part */
+/* ------------------------- */
+#first,
+#second,
+#third {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    word-spacing: 5px;
+}
+
+/* Third -img in card */
+#third div {
+    margin-right: 5%;
+}
+
+.B1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.B1 .B1-1 {
+    width: 10%;
+}
+
+.B1 .B1-1 img {
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+
+#second p {
+    width: 90%;
+}
+
+#second div {
+    /* border: 1px solid red; */
+    margin-right: 5%;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ------ Image Shape--------*/
+
+.card-2 {
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+/* Shape-1 */
+
+.card-2 .Sh-1 {
+    border: 2px solid black;
+    height: 400px;
+    width: 17%;
+    margin-top: 30px;
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-2 .Sh-1 #Sh-1-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    width: 80%;
+    background-color: blue;
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+}
+
+
+/* Shape-2 */
+.card-2 .Sh-2 {
+    border: 2px solid black;
+    height: 400px;
+    width: 17%;
+    margin-top: 30px;
+    transform: rotate(20deg);
+    display: flex;
+    justify-content: center;
+}
+
+.card-2 .Sh-2 #Sh-2-1 {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+    width: 80%;
+    margin-top: 30px;
+    background-color: blue;
+}
+
+
+/* Shape-3 */
+
+.card-2 .Sh-3 {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 17%;
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+    margin-top: 30px;
+}
+
+.card-2 .Sh-3 #Sh-3-1 {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+    width: 85%;
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+    margin-top: 30px;
+    background-color: blue;
+}
+
+
+/* -------card-3---------- */
+.card-3 {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-3 #Head-1 {
+    width: 60%;
+    text-align: center;
+}
+
+.card-3 #box-1 {
+    border-radius: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------- left Box part----------- */
+.card-3 #box-1 .div-left {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+}
+
+.card-3 #box-1 .div-left #box-1-Div-1{
+    position: absolute;
+    border: 1px solid blueviolet;
+    background-color: blue;
+    width: 50%;
+    height: 350px;
+    transform: rotate(-7deg);
+}
+.card-3 #box-1 .div-left #box-1-Div-2{
+    position: absolute;
+    border: 1px solid blueviolet;
+    background-color: brown;
+    margin-left: 30%;
+    margin-top: 5%;
+    width: 50%;
+    height: 350px;
+    transform: rotate(7deg);
+}
+.card-3 #box-1 .div-left #box-1-Div-3{
+    position: relative;
+    border: 1px solid blueviolet;
+    background-color: greenyellow;
+    margin-left: 20%;
+    margin-top: 30%;
+    width: 50%;
+    height: 350px;
+    transform: rotate(-5deg);
+}
+
+/*--------- Right Box part----------- */
+.card-3 #box-1 .div-right {
+    width: 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.card-3 #box-1 .div-right .Font-ch {
+    font-size: 50px;
+    margin: auto;
+    font-weight: lighter;
+}
+
+/* -----------Amazing Box---------- */
+.card-4{
+    background-color: rgb(255,250,245);
+    margin-top: 10%;
+    width: 100%;
+
+}
+#box-4-1{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 10%;
+}
+#box-4-1 #Head-2{
+    width: 51%;
+}
+
+#box-4-1 #Head-2 p{
+    font-size: large;
+    line-break: auto;
+    line-height: 40px;
+}
+#box-4-1 .sh-4-1{
+    background-color: white;
+    border: 2px solid black;
+    margin-top: 5%;
+    width: 28%;
+    height: 390px;
+    transform: rotate(12deg);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+#box-4-1 .sh-4-1 #card-4-img{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+}
+
+/* box-2 */
+
+#box-4-2{
+    border: 1px solid red;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 10%;
+}
+#box-4-2 .Sh-4-2{
+    border: 2px solid black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    width: 45%;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    margin-top: -40px;
+}
+#box-4-2 .Sh-4-2 #card-4-2-img{
+    /* padding: 5px; */
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+
+#box-4-2 .mis-details{
+    border: 1px solid red;
+    width: 20%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+
+/* Fotter-------- */
+footer{
+    background-color: rgb(255,250,245);
+
+}
+.Fotter-card{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+#Footer-left{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    line-height: 7px;
+}
+#Footer-left h2{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#Fotter-Line{
+    border: 1px solid grey;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 290px;    
+    transform: rotate(20deg);
+}
+
+#Fotter-right{
+    padding: 45px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Fotter-right div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Fotter-right .Right-line{
+    border: 1px solid rgba(128, 128, 128, 0.267);
+}
+#Fotter-right p{
+    color: rgba(128, 128, 128, 0.723) ;
+}
+footer .Lines{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    border: 1px solid rgba(128, 128, 128, 0.267);
+
+}
+footer #bottom-footer{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
