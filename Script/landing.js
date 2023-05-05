@@ -28,8 +28,19 @@ if (signInData) {
   const userNameSpan = document.querySelector("#user-name");
   registrationBtn.style.display = "none";
   userNameSpan.textContent = signInData.name;
+
+  const adminIcon = document.createElement("i");
+  adminIcon.classList.add("fas", "fa-screwdriver-wrench");
+
+  const adminLink = document.createElement("a");
+  adminLink.href = "Admin_login.html";
+  adminLink.appendChild(adminIcon);
+
+  const space = document.createTextNode(" ");
+
   userNameSpan.style.display = "inline";
-  
-}
+  userNameSpan.appendChild(space);
+  userNameSpan.appendChild(adminLink);
+} 
 
 // shape-----------
