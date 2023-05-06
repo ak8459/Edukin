@@ -7,29 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edukin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-
-
     <link rel="stylesheet" href="./Style/landing.css">
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
     <!-- nav-bar -->
-    <nav>
-        <div id="logo">
-            <img src="./Images/Logo1.png" id="logo-img" alt="">
-        </div>
-        <div id="mid">
-            <a href="#">Home</a>
-            <a href="#">Programs</a>
-            <a href="#">Courses</a>
-            <a href="#">Admissions</a>
-            <a href="#">Testimonial</a>
-        </div>
-        <div id="nav-right">
-            <button id="Registration-btn">Registration</button>
-            <span id="user-name" style="display:none;"></span>
-        </div>
-    </nav>
+    <div id="nav-placeholder">
+    </div>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("navbar.html");
+        });
+    </script>
+
 
     <!-- Edu part -->
     <div class="Edu-1">
@@ -139,10 +132,11 @@
                 <h2>It's Simple, The Best Way</h2>
             </div>
             <!--  -->
-            
+
             <!--  -->
             <div class="mis-details1">
-                <p>To Learn or practice a language through fun. Our method is based on interaction, through discovery, activities and challenges. And with 20 years of teaching behind us, we know it works!</p>
+                <p>To Learn or practice a language through fun. Our method is based on interaction, through discovery,
+                    activities and challenges. And with 20 years of teaching behind us, we know it works!</p>
             </div>
         </div>
     </div>
@@ -223,55 +217,13 @@
     </div>
 
     <!-- fotter -->
-
-    <footer>
-        <div class="Fotter-card">
-            <div id="Footer-left">
-                <h2>Contact</h2>
-                <p style="font-size: larger;">Never Want to Miss A Camp Spot Ever ?</p>
-                <h3>Online Course Catalogue</h3>
-                <a href="">Book a Camp</a>
-                <a href="">Camp location</a>
-                <a href="">Summer camps</a>
-            </div>
-            <div id="Fotter-Line"></div>
-            <div id="Fotter-right">
-                <div>
-                    <h3>Address</h3>
-                    <p>123 Dream Avenue, New York</p>
-                </div>
-                <div class="Right-line"></div>
-                <div>
-                    <h3>E-mail</h3>
-                    <p>hello.edukin@gmail.com</p>
-                </div>
-                <div class="Right-line"></div>
-                <div>
-                    <h3>Telephone</h3>
-                    <p>(313) 235 634 846 534</p>
-                </div>
-                <div class="Right-line"></div>
-                <div>
-                    <h3>Instagram</h3>
-                    <p>@hello.edukin</p>
-                </div>
-                <div class="Right-line"></div>
-                <div>
-                    <h3>Facebook</h3>
-                    <p>Edukin.eng.com</p>
-                </div>
-                <div class="Right-line"></div>
-            </div>
-        </div>
-        <div class="Lines"></div>
-        <div id="bottom-footer">
-            <p>@2021 Edkin. All right reserver</p>
-            <p>Terms of Use</p>
-            <p>Privacy Policy</p>
-            <p>Design By Orix Agency</p>
-        </div>
-    </footer>
+    <div id="footer">
+    </div>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
 </body>
-<script src="./Script/landing.js"></script>
 
 </html>
