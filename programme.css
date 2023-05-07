@@ -3,10 +3,11 @@
 *{
   box-sizing: border-box;
 }
+
 body{
   padding: 0px;
   margin: 0px;
-  background-color: whitesmoke;
+  
 }
 
   /* ///nav */
@@ -86,7 +87,7 @@ button {
     border: 3px solid black;
     border-radius: 5px;
     padding: 20px;
-    line-height: 30px;
+    line-height: 20px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
