@@ -1,10 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    background: url("");
-    background-size: cover;
-    background-position: center;
     font-family: sans-serif;
+    background-image: url("https://wallpapercave.com/wp/wp2508260.jpg");
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
 }
 .login-box{
     width: 320px;

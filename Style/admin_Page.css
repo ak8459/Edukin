@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url("https://wallpapercave.com/wp/wp2508260.jpg");
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    left: 300px;
+    padding: 0.75%;
+}
+
+.top-bar {
+    height: 60px;
+    width: 100%;
+    background: #ffffff4a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #444;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.top-bar1 {
+    height: 60px;
+    width: 70%;
+    display:flex ;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.top-bar1 .search {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+
+.search input {
+    width: 100%;
+    min-width: 128px;
+    height: 40px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: #f5f5f5;
+}
+
+.search i {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.user {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cards {
+    margin-top: 60px;
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.cards .card {
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.number {
+    font-size: 35px;
+    font-weight: 500;
+    color: black;
+}
+
+.card-name {
+    color: #444;
+    font-weight: 600;
+}
+
+.icon-box i {
+    font-size: 45px;
+    color: #444;
+}
+
+.tables {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    align-items: self-start;
+    padding: 0 20px 20px 20px;
+}
+
+.img-box-small {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.last-appointments,
+.doctor-visiting{
+    min-height: 350px;
+    background: rgba(255, 255, 255, 0.449);
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-size: large;
+}
+
+.btn, .Update-btn, .submit-btn  {
+    padding: 5px 10px;
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    height: 40px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    font-size: medium;
+}
+.btn, .Update-btn ,.submit-btn:hover{
+    cursor: pointer;
+}
+table {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead td {
+    font-weight: bolder;
+    color: black;
+    font-size: large;
+}
+
+table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    color: black;
+    box-shadow: 0 0 10px rgba(173,252,234,1);
+    transform: scale(1.1) translateX(-0.1%);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+table tbody tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 9px 5px;
+}
+
+td i {
+    padding: 7px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.last-appointments table tbody td:last-child {
+    white-space: nowrap;
+}
+
+.fa-eye {
+    background: #32bea6;
+}
+
+.fa-edit {
+    background: #63b4f4;
+}
+
+.fa-trash-alt {
+    background: #ed5564;
+}
+
+@media(max-width:1090px) {
+    .sidebar {
+        width: 60px;
+    }
+    .main {
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+    .top-bar {
+        width: calc(100% - 60px);
+    }
+}
+
+@media(max-width:860px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tables {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:530px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .last-appointments td:nth-child(3) {
+        display: none;
+    }
+}
+
+@media(max-width:420px) {
+    .last-appointments,
+    .doctor-visiting {
+        font-size: 70%;
+        padding: 10px;
+        min-height: 200px;
+    }
+    .cards,
+    .tables {
+        padding: 10px;
+    }
+    .search input {
+        padding: 0 10px;
+    }
+    .user {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Paggination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination a {
+    color: black;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .pagination a.active {
+    background-color: black;
+    color: white;
+  }
+  
+
+  /* delete/update */
+  .fa-trash {
+  color: red;
+}
+
+.fa-sync {
+  color: green;
+}   
+
+/* updating part */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .visiting {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 5%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+  }
+  
+  
+  input[type="submit"] {
+    background-color: #00a8ff;
+    color: white;
+    padding: 10px px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #00587a;
+  }
