@@ -135,6 +135,10 @@ function createCards(data) {
     enrolBtn.className = 'enrollBtn'
     enrolBtn.textContent = 'Enroll Now';
 
+    enrolBtn.addEventListener('click',()=>{
+        window.location.href = '../html/admission.html'
+    })
+
 
 
 

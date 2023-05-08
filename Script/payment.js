@@ -32,6 +32,10 @@ let dc = document.querySelector('.submit-btn')
 
 dc.addEventListener('click', function (e) {
     e.preventDefault()
-    alert('payment successful')
-    window.location.href = '../index.html'
+    setTimeout(() => {
+        alert('payment successful');
+        window.location.href = '../index.html'
+    }, 2000)
+
+
 });

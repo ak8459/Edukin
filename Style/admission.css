@@ -28,7 +28,7 @@
    align-items: center;
    background-color: #fff;
    height: 80px;
-   margin-bottom: 3%;
+   margin-bottom: 1%;
  }
 
  #mid {
@@ -76,7 +76,7 @@
    color: rgb(176, 9, 37);
  }
 
- p {
+ #p1 {
    text-align: center;
    margin-bottom: 50px;
  }
@@ -112,30 +112,30 @@
 
  /* ////media query// */
 
-/* medium screen */
-@media only screen and (max-width: 800px) {
- 
+ /* medium screen */
+ @media only screen and (max-width: 800px) {
 
-  #middle-cont {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
- 
 
-}
+   #middle-cont {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+   }
+
+
+ }
 
 
  /* Small Screen  */
  @media only screen and (max-width: 500px) {
- 
-  #middle-cont {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
- 
-}
+
+   #middle-cont {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+   }
+
+ }
 
 
  /* 
@@ -255,29 +255,31 @@
  }
 
 
- /* Fotter-------- */
+ /* Footer-------- */
  footer {
    background-color: rgb(255, 250, 245);
-
+   margin-top: 25px;
  }
 
  .Fotter-card {
-   margin-top: 5%;
+   /* margin-top: 5%; */
+   padding-top: 20px;
    display: flex;
    width: 100%;
    justify-content: space-evenly;
  }
 
  #Footer-left {
-   padding: 5px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    text-align: justify;
-   line-height: 7px;
+   /* line-height: 7px; */
  }
 
  #Footer-left h2 {
+   /* margin-top: -40px; */
+   /* margin: auto; */
    font-size: 100px;
    font-family: 'Courier New', Courier, monospace;
  }
@@ -285,7 +287,7 @@
 
  #Fotter-Line {
    border: 1px solid grey;
-   margin-top: 5%;
+   /* margin-top: 5%; */
    display: flex;
    justify-content: center;
    align-content: center;
@@ -294,25 +296,36 @@
  }
 
  #Fotter-right {
-   padding: 45px;
+   padding: 10px;
    width: 25%;
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
+   /* border: 1px solid red; */
+
  }
 
  #Fotter-right div {
    width: 100%;
    display: flex;
-   justify-content: space-between;
    align-items: center;
+   justify-content: space-between;
+   /* margin: auto; */
+   line-height: 2.5rem;
+
  }
 
  #Fotter-right .Right-line {
    border: 1px solid rgba(128, 128, 128, 0.267);
+   /* margin-top: -5px; */
  }
 
  #Fotter-right p {
+   /* margin-top: 25px; */
+    display: flex;
+     flex-direction: column;
+    align-items: center;
    color: rgba(128, 128, 128, 0.723);
  }
 

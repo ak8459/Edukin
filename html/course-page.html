@@ -6,11 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/course-page.css">
-    <link rel="stylesheet" href="../css/dropdown-menu.css">
+    <link rel="stylesheet" href="../Style/course-page.css">
+    <link rel="stylesheet" href="../Style/dropdown-menu.css">
+    <!-- <link rel="stylesheet" href="../Style/"> -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <style>
+        footer {
+            background-color: rgb(255, 250, 245);
+
+        }
+
+        .Fotter-card {
+            /* margin-top: 5%; */
+            padding-top: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        #Footer-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: justify;
+            /* line-height: 7px; */
+        }
+
+        #Footer-left h2 {
+            /* margin-top: -40px; */
+            /* margin: auto; */
+            font-size: 100px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+        #Fotter-Line {
+            border: 1px solid grey;
+            /* margin-top: 5%; */
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 290px;
+            transform: rotate(20deg);
+        }
+
+        #Fotter-right {
+            /* padding: px; */
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            /* border: 1px solid red; */
+            line-height: 2.1rem ;
+        }
+
+        #Fotter-right div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 1px solid red; */
+        }
+
+        #Fotter-right .Right-line {
+            border: 1px solid rgba(128, 128, 128, 0.267);
+        }
+
+        #Fotter-right p {
+            color: rgba(128, 128, 128, 0.723);
+        }
+
+        footer .Lines {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 80%;
+            border: 1px solid rgba(128, 128, 128, 0.267);
+
+        }
+
+        footer #bottom-footer {
+            margin-top: 2%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        /* navbar */
+    </style>
 </head>
 
 <body>
+    <nav>
+        <div id="logo">
+            <img src="../Images/Logo1.png" id="logo-img" alt="">
+        </div>
+        <div id="mid">
+            <a href="../index.html">Home</a>
+            <a href="../html/programme.html">Programs</a>
+            <a href="../html/course-page.html">Courses</a>
+            <a href="../html/admission.html">Admissions</a>
+            <a href="../html/testimonialPage.html">Testimonial</a>
+        </div>
+        <div id="nav-right">
+            <button id="Registration-btn">Registration</button>
+            <span id="user-name" style="display:none;"></span>
+        </div>
+    </nav>
+
 
     <div class="top-heading-wrapper">
         <div class="top-content">
@@ -24,15 +128,68 @@
     <div class="data-list-wrapper" id="data-list-wrapper">
 
 
-        
+
     </div>
     <div class="pagination-wrapper" id="pagination-wrapper">
-        
+
     </div>
-    
+
+
+    <div id="footer">
+        <footer>
+            <div class="Fotter-card">
+                <div id="Footer-left">
+                    <h2>Contact</h2>
+                    <p style="font-size: larger;">📩 Never Want to Miss A Camp Spot Ever ?</p>
+                    <h3>Online Course Catalogue</h3>
+                    <a href="">Book a Camp</a>
+                    <a href="">Camp location</a>
+                    <a href="">Summer camps</a>
+                </div>
+                <div id="Fotter-Line"></div>
+                <div id="Fotter-right">
+                    <div>
+                        <h3>Address</h3>
+                        <p>123 Dream Avenue, New York</p>
+                    </div>
+                    <div class="Right-line"></div>
+                    <div>
+                        <h3>E-mail</h3>
+                        <p>hello.edukin@gmail.com</p>
+                    </div>
+                    <div class="Right-line"></div>
+                    <div>
+                        <h3>Telephone</h3>
+                        <p>(313) 235 634 846 534</p>
+                    </div>
+                    <div class="Right-line"></div>
+                    <div>
+                        <h3>Instagram</h3>
+                        <p>@hello.edukin</p>
+                    </div>
+                    <div class="Right-line"></div>
+                    <div>
+                        <h3>Facebook</h3>
+                        <p>Edukin.eng.com</p>
+                    </div>
+                    <div class="Right-line"></div>
+                </div>
+            </div>
+            <div class="Lines"></div>
+            <div id="bottom-footer">
+                <p>@2021 Edkin. All right reserver</p>
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+                <p>Design By Orix Agency</p>
+            </div>
+        </footer>
+    </div>
+
+
 
 </body>
 
 <script src="../Script/course-page.js"></script>
+<script src="../Script/landing.js"></script>
 
 </html>
