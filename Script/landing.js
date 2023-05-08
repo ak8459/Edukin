@@ -43,4 +43,12 @@ if (signInData) {
   userNameSpan.appendChild(adminLink);
 } 
 
-// shape-----------
+// -------------------
+const subscribeBtn = document.getElementById("subscribe");
+
+subscribeBtn.addEventListener("click", function (event) {
+  event.preventDefault(); // prevent the default behavior of the anchor tag
+  const email = document.querySelector('input[type="email"]').value;
+  alert(`You have subscribed to daily newsletter with email ${email}`);
+});
+
