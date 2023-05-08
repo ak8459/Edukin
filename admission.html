@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Edukin Admission</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,6 +14,24 @@
 </head>
 
 <body>
+   <!-- ////nav bar start/// -->
+   <nav>
+      <div id="logo">
+          <img src="./Images/Logo1.png" id="logo-img" alt="">
+      </div>
+      <div id="mid">
+          <a href="#">Home</a>
+          <a href="#">Programs</a>
+          <a href="#">Courses</a>
+          <b><a href="#">Admissions</a></b>
+          <a href="#">Testimonial</a>
+      </div>
+      <div id="nav-right">
+          <span id="user-name" style="display:none;"></span>
+      </div>
+  </nav>
+
+   <!-- nav bar end -->
    <!-- ///banner/// -->
    <div id=""></div>
    <div id="banner">
@@ -23,10 +41,10 @@
    </div>
    <h1>Admissions Process</h1>
    <br>
-   <p>We are currently accepting applications for Grades 4 to 10 for the 2023-24 academic year.</p>
+   <p id="H-p">We are currently accepting applications for Grades 4 to 10 for the 2023-24 academic year.</p>
 
    <div id="middle-cont">
-      <div>
+       <div>
          <img src="https://oxenticstemplates.biz/templatemonster/school/images/img25.jpg" alt="err">
       </div>
       <div>
@@ -75,25 +93,21 @@
    <div id="online">
       <h1>Online Application</h1>
       <br>
-      <p>Online Application Information required</p>
+      <p>Online Application Information Required</p>
    </div>
 
    <!-- form -->
 
    <div class="container">
       <div class="form-box">
-         <h1 id="title">Basic Information</h1>
+         <h1 id="title">Basic Informations</h1>
          <form>
             <div class="input-group">
                <div class="input-field" id="nameField">
                   <i class="fa-solid fa-user"></i>
-                  <input type="text" id="name" placeholder="First Name">
+                  <input type="text" id="name" placeholder="Full Name">
                </div>
-               <div class="input-field" id="nameField">
-                  <i class="fa-solid fa-user"></i>
-                  <input type="text" id="name" placeholder="Last Name">
-               </div>
-
+               
                <div class="input-field">
                   <i class="fa-solid fa-envelope"></i>
                   <input type="email" id="email" placeholder="Parent Email ID">
@@ -101,11 +115,16 @@
 
                <div class="input-field">
                   <i class="fa-regular fa-calendar"></i>
-                  <input type="date" id="email" placeholder="Date Of Birth">
+                  <input type="date" id="Date" placeholder="Date Of Birth">
                </div>
+               
+               <div class="input-field" id="nameField">
+                  <i class="fa-sharp fa-solid fa-book"></i>
+                  <input type="text" id="course" placeholder="Course">
+               </div>             
 
             </div>
-            <div class="btn-field">
+            <div class="btn-field"> 
                <button type="submit" id="nextBtn">Next</button>
             </div>
          </form>
@@ -114,6 +133,56 @@
    </div>
 
    <!-- ///////////////// -->
+
+   <!-- fotter -->
+
+   <footer>
+      <div class="Fotter-card">
+          <div id="Footer-left">
+              <h2>Contact</h2>
+              <p style="font-size: larger;">Never Want to Miss A Camp Spot Ever ?</p>
+              <h3>Online Course Catalogue</h3>
+              <a href="">Book a Camp</a>
+              <a href="">Camp location</a>
+              <a href="">Summer camps</a>
+          </div>
+          <div id="Fotter-Line"></div>
+          <div id="Fotter-right">
+              <div>
+                  <h3>Address</h3>
+                  <p>123 Dream Avenue, New York</p>
+              </div>
+              <div class="Right-line"></div>
+              <div>
+                  <h3>E-mail</h3>
+                  <p>hello.edukin@gmail.com</p>
+              </div>
+              <div class="Right-line"></div>
+              <div>
+                  <h3>Telephone</h3>
+                  <p>(313) 235 634 846 534</p>
+              </div>
+              <div class="Right-line"></div>
+              <div>
+                  <h3>Instagram</h3>
+                  <p>@hello.edukin</p>
+              </div>
+              <div class="Right-line"></div>
+              <div>
+                  <h3>Facebook</h3>
+                  <p>Edukin.eng.com</p>
+              </div>
+              <div class="Right-line"></div>
+          </div>
+      </div>
+      <div class="Lines"></div>
+      <div id="bottom-footer">
+          <p>@2021 Edkin. All right reserver</p>
+          <p>Terms of Use</p>
+          <p>Privacy Policy</p>
+          <p>Design By Orix Agency</p>
+      </div>
+  </footer>
 </body>
 <script src="admission.js"></script>
 
