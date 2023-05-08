@@ -1,171 +1,332 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
 
-/************banner*******/
-#banner {
-  margin-top: 20px;
-  width: 100%;
-  gap: 10px;
-  margin-bottom: 20px;
-}
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
 
-#banner>img {
-  width: 100%;
-}
+ /* body {
+   padding: 0;
+   margin: 0;
+ } */
 
-  h1{
-    text-align: center;
-  }
+ /* ///nav */
+ #user-name {
+   display: none;
+   font-size: 30px;
+   font-weight: bold;
+   color: #333;
+   margin-left: 10px;
+ }
 
-  p{
-    text-align: center;
-    margin-bottom: 50px;
-  }
+ nav {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: #fff;
+   height: 80px;
+   margin-bottom: 3%;
+ }
 
-/* //////middle container//// */
+ #mid {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+ }
 
-  #middle-cont{
-    width: 100%;
-    display: flex;
-    margin-bottom: 40px;
-   
-  }
+ a {
+   text-decoration: none;
+   color: #333;
+   padding: 10px;
+   font-size: 20px;
+ }
 
-  #middle-cont>div{
-    width: 50%;
-  }
+ button {
+   background-color: #333;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   font-size: 18px;
+   cursor: pointer;
+ }
 
-  #middle-cont>div>img{
-    width: 100%;
+ #logo img {
+   height: 90px;
+   margin-left: 10px;
 
-  }
+ }
 
-  #middle-cont>:nth-child(2) {
+
+ /************banner*******/
+ #banner {
+   width: 100%;
+   gap: 10px;
+   margin-bottom: 20px;
+ }
+
+ #banner>img {
+   width: 100%;
+ }
+
+ h1 {
+   text-align: center;
+   color: rgb(176, 9, 37);
+ }
+
+ p {
+   text-align: center;
+   margin-bottom: 50px;
+ }
+
+ #H-p:hover {
+   color: rgb(116, 116, 229);
+ }
+
+ /* //////middle container//// */
+
+ #middle-cont {
+   width: 100%;
+   display: flex;
+   margin-bottom: 40px;
+
+ }
+
+ #middle-cont>div {
+   width: 50%;
+ }
+
+ #middle-cont>div>img {
+   width: 100%;
+
+ }
+
+ #middle-cont>:nth-child(2) {
    padding: 25px;
    background-color: rgb(120, 65, 171);
    color: white;
 
-  }
+ }
 
+ /* ////media query// */
+
+/* medium screen */
+@media only screen and (max-width: 800px) {
  
-/* 
-   ///online information */
-  #online{
-    text-align: center;
+
+  #middle-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
-
-
-   /* //////////////form///////// */
-  
-   .container {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(107, 153, 108, 0.8), rgba(175, 92, 165, 0.8)), url(https://media.istockphoto.com/id/819139854/photo/pretty-teacher-helping-pupil-in-classroom-smiling-at-camera.jpg?s=612x612&w=0&k=20&c=sqGaOuxB6ZBrfObQTFgrFHS7hcEjGkmitGQfY_y3cuc=);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.form-box {
-    width: 90%;
-    max-width: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 50px 60px 70px;
-    text-align: center;
+ 
 
 }
 
-.form-box h1 {
 
-    font-size: 30px;
-    margin-bottom: 60px;
-    color: #3c00a0;
-    position: relative;
-}
-
-.form-box h1 ::after {
-    content: "";
-    width: 30px;
-    height: 4px;
-    border-radius: 3px;
-    background: #3c00a0;
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    transform: translate(-50%)
-}
-
-.input-field {
-    background: #eaeaea;
-    margin: 15px 0;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    max-height: 65px;
-    transition: max-height 0.5s;
-    overflow: hidden;
-}
-
-input {
-    width: 100%;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    padding: 18px 15px;
-
-}
-
-.input-field i {
-    margin-left: 15px;
-    color: #999;
-
-}
-
-form p {
-    text-align: left;
-    font-size: 13px;
-}
-
-form p a {
-    text-decoration: none;
-    color: #3c00a0;
-}
-
-.btn-field {
+ /* Small Screen  */
+ @media only screen and (max-width: 500px) {
+ 
+  #middle-cont {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+  }
+ 
 }
 
-.btn-field button {
-    flex-basis: 48%;
-    background: #3c00a0;
-    color: #fff;
-    height: 40px;
-    border-radius: 20px;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    transition: background 1s;
-}
 
-.input-group {
-    height: 280px;
+ /* 
+   ///online information */
+ #online {
+   text-align: center;
+ }
 
-}
 
-.btn-field button.disable {
-    background: #eaeaea;
-    color: #fff
-}
+ /* //////////////form///////// */
 
+ .container {
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(107, 153, 108, 0.8), rgba(175, 92, 165, 0.8)), url(https://media.istockphoto.com/id/819139854/photo/pretty-teacher-helping-pupil-in-classroom-smiling-at-camera.jpg?s=612x612&w=0&k=20&c=sqGaOuxB6ZBrfObQTFgrFHS7hcEjGkmitGQfY_y3cuc=);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+ }
+
+ .form-box {
+   width: 90%;
+   max-width: 450px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: #fff;
+   padding: 50px 60px 70px;
+   text-align: center;
+
+ }
+
+ .form-box h1 {
+
+   font-size: 30px;
+   margin-bottom: 60px;
+   color: #3c00a0;
+   position: relative;
+ }
+
+ .form-box h1 ::after {
+   content: "";
+   width: 30px;
+   height: 4px;
+   border-radius: 3px;
+   background: #3c00a0;
+   position: absolute;
+   bottom: -12px;
+   left: 50%;
+   transform: translate(-50%)
+ }
+
+ .input-field {
+   background: #eaeaea;
+   margin: 15px 0;
+   border-radius: 3px;
+   display: flex;
+   align-items: center;
+   max-height: 65px;
+   transition: max-height 0.5s;
+   overflow: hidden;
+ }
+
+ input {
+   width: 100%;
+   background: transparent;
+   border: 0;
+   outline: 0;
+   padding: 18px 15px;
+
+ }
+
+ .input-field i {
+   margin-left: 15px;
+   color: #999;
+
+ }
+
+ form p {
+   text-align: left;
+   font-size: 13px;
+ }
+
+ form p a {
+   text-decoration: none;
+   color: #3c00a0;
+ }
+
+ .btn-field {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .btn-field button {
+   flex-basis: 48%;
+   background: #3c00a0;
+   color: #fff;
+   height: 40px;
+   border-radius: 20px;
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+   transition: background 1s;
+   cursor: pointer;
+ }
+
+ .input-group {
+   height: 280px;
+
+ }
+
+ .btn-field button.disable {
+   background: #eaeaea;
+   color: #fff
+ }
+
+
+ /* Fotter-------- */
+ footer {
+   background-color: rgb(255, 250, 245);
+
+ }
+
+ .Fotter-card {
+   margin-top: 5%;
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+ }
+
+ #Footer-left {
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: justify;
+   line-height: 7px;
+ }
+
+ #Footer-left h2 {
+   font-size: 100px;
+   font-family: 'Courier New', Courier, monospace;
+ }
+
+
+ #Fotter-Line {
+   border: 1px solid grey;
+   margin-top: 5%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   height: 290px;
+   transform: rotate(20deg);
+ }
+
+ #Fotter-right {
+   padding: 45px;
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ #Fotter-right div {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ #Fotter-right .Right-line {
+   border: 1px solid rgba(128, 128, 128, 0.267);
+ }
+
+ #Fotter-right p {
+   color: rgba(128, 128, 128, 0.723);
+ }
+
+ footer .Lines {
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   width: 80%;
+   border: 1px solid rgba(128, 128, 128, 0.267);
+
+ }
+
+ footer #bottom-footer {
+   margin-top: 2%;
+   display: flex;
+   justify-content: space-evenly;
+ }
