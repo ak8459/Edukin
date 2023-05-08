@@ -64,9 +64,11 @@ button {
     margin-bottom: 30px;
     color: rgb(64, 64, 201);
 }
+
 .p:hover{
     color: rgb(208, 67, 187);
 }
+
 #img{
     display: flex;
     justify-content: center;
@@ -98,10 +100,7 @@ button {
     
 }
 
-.parent {
-    margin: auto;
 
-}
 
 .parent button{
     
@@ -123,6 +122,34 @@ button {
     color:#75389f
 }
 
+/* ////media query// */
+
+/* medium screen */
+@media only screen and (max-width: 800px) {
+ 
+
+  .parent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  
+}
+
+}
+
+ /* Small Screen  */
+@media only screen and (max-width: 500px) {
+ 
+  .parent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  margin: auto;
+  
+}
+}
 
 /* Fotter-------- */
 
