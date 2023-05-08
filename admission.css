@@ -110,6 +110,33 @@
 
  }
 
+ /* ////media query// */
+
+/* medium screen */
+@media only screen and (max-width: 800px) {
+ 
+
+  #middle-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+
+}
+
+
+ /* Small Screen  */
+ @media only screen and (max-width: 500px) {
+ 
+  #middle-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+}
+
 
  /* 
    ///online information */
