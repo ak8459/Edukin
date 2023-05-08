@@ -11,10 +11,10 @@ window.addEventListener('load', async () => {
 async function fetchData(pageNumber) {
 
     try {
-        let res = await fetch(`https://mockerapi.onrender.com/user?_limit=3&_page=${pageNumber}`);
+        let res = await fetch(`https://mockerapi.onrender.com/user?_limit=10&_page=${pageNumber}`);
         let totalPosts = res.headers.get("X-Total-Count");
-       
-        let totalButtons = Math.ceil(totalPosts / 3);
+
+        let totalButtons = Math.ceil(totalPosts / 2);
 
         paginationWrapper.innerHTML = null;
         for (let i = 1; i <= totalButtons; i++) {
@@ -151,7 +151,7 @@ function getAsButton(text, dataId) {
     let btn = document.createElement("button");
     btn.setAttribute("data-id", dataId);
     btn.innerText = text;
-    btn.className ='paginationBtn'
+    btn.className = 'paginationBtn'
 
     btn.addEventListener("click", function (e) {
         fetchData(e.target.dataset.id);
@@ -159,4 +159,42 @@ function getAsButton(text, dataId) {
     });
 
     return btn;
+}
+
+const optionMenu = document.querySelector(".select-menu"),
+    selectBtn = optionMenu.querySelector(".select-btn"),
+    options = optionMenu.querySelectorAll(".option"),
+    sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+
+options.forEach(option => {
+    option.addEventListener("click", () => {
+        let selectedOption = option.querySelector(".option-text").innerText;
+
+        filterData(selectedOption)
+
+
+
+        sBtn_text.innerText = selectedOption;
+
+        optionMenu.classList.remove("active");
+    });
+});
+
+async function filterData(selectedOption) {
+    let res = await fetch('https://mockerapi.onrender.com/user');
+    let data = await res.json()
+
+    data = data.filter((item) => {
+        console.log(item.category);
+        if (item.category === selectedOption) {
+            return true;
+        }
+    })
+    console.log(data);
+    getCards(data) 
+    
+    
+
 }
