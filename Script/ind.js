@@ -87,8 +87,8 @@ function displayCourse(data) {
 
             const itemId = event.target.getAttribute('data-id');
             fetch(`https://mockerapi.onrender.com/user/${itemId}`, {
-                method: 'DELETE'
-            })
+                    method: 'DELETE'
+                })
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`Failed to delete course`);
@@ -220,12 +220,12 @@ updateBtn.addEventListener("click", (event) => {
         ageGroup: ageGroupInput.value,
     };
     fetch(`https://mockerapi.onrender.com/user/${itemId}`, {
-        method: "PATCH",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(updatedCourse),
-    })
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(updatedCourse),
+        })
         .then((response) => {
             console.log(response)
             if (!response.ok) {
@@ -251,11 +251,11 @@ updateBtn.addEventListener("click", (event) => {
 document.addEventListener('DOMContentLoaded', () => {
     const addButton = document.querySelector('.btn');
     const container = document.querySelector('.container');
-  
+
     addButton.addEventListener('click', () => {
         document.querySelector(".doctor-visiting").style.display = "none";
         document.querySelector(".container").style.display = "block";
-      const formHTML = `
+        const formHTML = `
         <div class="doctor-visiting">
           <div class="heading">
             <h2>Add New Course</h2>            
@@ -274,6 +274,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
               <label for="price">Price:</label>
               <input type="text" id="price1" name="price"><br><br>
+
+              <label for="img">Image</label>
+              <input type="text" id="img" name="img"><br><br>
   
               <label for="age_group">Age group:</label>
               <input type="text" id="age_group1" name="age_group"><br><br>
@@ -281,60 +284,63 @@ document.addEventListener('DOMContentLoaded', () => {
           </form>
         </div>
       `;
-  
-      container.innerHTML = formHTML;
-      const submitButton = document.querySelector('.submit-btn');
-      submitButton.textContent = 'Update';
-  
-      submitButton.addEventListener('click', async (event) => {
-        event.preventDefault();
-        const title = document.querySelector('#title1').value;
-        const subHeading = document.querySelector('#subHeading1').value;
-        const category = document.querySelector('#category1').value;
-        const price = document.querySelector('#price1').value;
-        const ageGroup = document.querySelector('#age_group1').value;
-        
-        console.log( title, subHeading, category, price, ageGroup);
 
-        const requestBody = {
-          title,
-          subHeading,
-          category,
-          price,
-          ageGroup
-        };
-      
-        const response = await fetch('https://mockerapi.onrender.com/user', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(requestBody)
+        container.innerHTML = formHTML;
+        const submitButton = document.querySelector('.submit-btn');
+        submitButton.textContent = 'Update';
+
+        submitButton.addEventListener('click', async (event) => {
+            event.preventDefault();
+            const title = document.querySelector('#title1').value;
+            const subHeading = document.querySelector('#subHeading1').value;
+            const category = document.querySelector('#category1').value;
+            const price = document.querySelector('#price1').value;
+            const ageGroup = document.querySelector('#age_group1').value;
+            const image = document.querySelector('#img').value;
+
+            // console.log(title, subHeading, category, price, ageGroup, img);
+            // console.log(img);
+
+            const requestBody = {
+                title,
+                subHeading,
+                category,
+                price,
+                ageGroup,
+                image
+            };
+
+            const response = await fetch('https://mockerapi.onrender.com/user', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(requestBody)
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log('Added new course:', data);
+
+                allData.push(data);
+                displayCourse(allData);
+                location.reload();
+
+                submitButton.textContent = 'Update Course';
+            } else {
+                console.error('Failed to add new course:', response.status);
+            }
         });
-      
-        if (response.ok) {
-          const data = await response.json();
-          console.log('Added new course:', data);
 
-          allData.push(data);
-          displayCourse(allData);
-          location.reload();
-
-          submitButton.textContent = 'Update Course';
-        } else {
-          console.error('Failed to add new course:', response.status);
-        }
-      });
-      
     })
-  });
+});
 
 
 //   hide the field----------------
 const addNewCourseBtn = document.querySelector("#add-new-course-btn");
 
 addNewCourseBtn.addEventListener("click", () => {
-  document.querySelector(".doctor-visiting").style.display = "none";
-  document.querySelector(".container").style.display = "block";
-  addNewCourseBtn.textContent = "Update the Course";
+    document.querySelector(".doctor-visiting").style.display = "none";
+    document.querySelector(".container").style.display = "block";
+    addNewCourseBtn.textContent = "Update the Course";
 });

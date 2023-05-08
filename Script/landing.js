@@ -10,14 +10,14 @@ logo.addEventListener('mouseleave', function() {
   });
 
 logo.addEventListener("click",function(){
-    window.location.href = "index.html";    
+    window.location.href = "/index.html";    
 })
 
 // Registration page
 const registration = document.getElementById("Registration-btn")
 
 registration.addEventListener("click",function(){
-  window.location.href = "registration.html"
+  window.location.href = "../html/registration.html"
 })
 
 // Registration to Name-------
@@ -33,7 +33,7 @@ if (signInData) {
   adminIcon.classList.add("fas", "fa-screwdriver-wrench");
 
   const adminLink = document.createElement("a");
-  adminLink.href = "Admin_login.html";
+  adminLink.href = "../html/Admin_login.html";
   adminLink.appendChild(adminIcon);
 
   const space = document.createTextNode(" ");

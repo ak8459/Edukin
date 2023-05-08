@@ -57,7 +57,7 @@ signInForm.addEventListener("submit", function (event) {
   }
 
   if (signInData && signInData.name === name && signInData.password === password) {
-    window.location.href = "index.html";
+    window.location.href = "/index.html";
   } else {
     alert("Incorrect username or password.");
   }
