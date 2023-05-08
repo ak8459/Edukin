@@ -28,8 +28,27 @@ if (signInData) {
   const userNameSpan = document.querySelector("#user-name");
   registrationBtn.style.display = "none";
   userNameSpan.textContent = signInData.name;
-  userNameSpan.style.display = "inline";
-  
-}
 
-// shape-----------
+  const adminIcon = document.createElement("i");
+  adminIcon.classList.add("fas", "fa-screwdriver-wrench");
+
+  const adminLink = document.createElement("a");
+  adminLink.href = "Admin_login.html";
+  adminLink.appendChild(adminIcon);
+
+  const space = document.createTextNode(" ");
+
+  userNameSpan.style.display = "inline";
+  userNameSpan.appendChild(space);
+  userNameSpan.appendChild(adminLink);
+} 
+
+// -------------------
+const subscribeBtn = document.getElementById("subscribe");
+
+subscribeBtn.addEventListener("click", function (event) {
+  event.preventDefault(); // prevent the default behavior of the anchor tag
+  const email = document.querySelector('input[type="email"]').value;
+  alert(`You have subscribed to daily newsletter with email ${email}`);
+});
+

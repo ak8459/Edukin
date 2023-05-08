@@ -10,7 +10,7 @@ function validateForm() {
   
     if (username === "admin" && password === "admin") {
       alert("Login successful!");
-      window.location.href ="#"
+      window.location.href ="admin_Page.html"
     } else {
       alert("Access denied");
     }

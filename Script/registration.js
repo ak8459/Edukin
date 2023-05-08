@@ -70,4 +70,6 @@ signUpForm.addEventListener("submit", function (event) {
   const password = signUpForm.querySelector('input[type="password"]').value;
   localStorage.setItem("signUpData", JSON.stringify({ name, email, password }));
   localStorage.setItem("signInData", JSON.stringify({ name, password }));
+  alert("Sign up successful! Please sign in to continue.");
+  signUpForm.reset();
 });

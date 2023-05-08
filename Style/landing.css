@@ -76,51 +76,18 @@ button {
 /* ----------card/1------------ */
 
 /* Left C img */
-.Edu-2 {
-    position: absolute;
-    margin-top: -105%;
-    margin-left: 40%;
-    height: 300px;
-}
 
-/* C-Shape */
-.c-shape {
-    justify-content: flex-start;
-    display: flex;
-    align-items: center;
-    width: 250px;
-    height: 500px;
-    border-top-right-radius: 250px;
-    border-bottom-right-radius: 250px;
-    border: 2px solid black;
-    border-left: none;
-}
 
-.c-shape-1 {
-    width: 150px;
-    height: 300px;
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 200px;
-    border: 2px solid black;
-    border-left: none;
-}
 
-.connect-top {
-    border: 1px solid black;
-    height: 105px;
-    margin-top: -160%;
-}
 
-.connect-bottom {
-    border: 1px solid black;
-    height: 105px;
-    margin-bottom: -160%;
-}
+
+
+
+
 
 /* Card part */
 #card-1 {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -129,44 +96,99 @@ button {
 
 /* B part */
 /* ------------------------- */
-#first,
-#second {
+.first,
+#second,
+#third {
     display: flex;
+    margin: auto;
+    width: 70%;
     align-items: center;
     word-spacing: 5px;
 }
 
+/* first */
+.first{
+    gap: 5%;
+}
+.first-1{
+    display: flex;
+    align-items: center;
+    gap: 17%;
+}
+.first h2{
+    margin-left: 5%;
+}
+.first-1 #first-img-div1{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px; 
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+.first-1 #first-img-div{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px; 
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: rotate(313deg);
+}
+.first-1 .B1-0-1{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 60%;
+}
+
+.first-1 .B1-0-0{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.B1-0-1{
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+.B1-0-0{
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+
 /* Third -img in card */
 #third{
-    border: 1px solid red;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
-}
-#third div {
-    border: 1px solid red;
-    /* margin: auto;
-    display: flex; */
+    gap: 2%;
 }
 
 .B1 {
-    /* border: 1px solid red; */
-    width: 100%;
-    /* display: flex;
-    align-items: center; */
+    width: 9%;
 }
-
-.B1 .B1-1 {
-    width: 10%;
+.B1 .B1-1{
+    display: flex;
+    justify-content: center;
 }
-
 .B1 .B1-1 img {
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
-
-
 #second p {
     width: 90%;
     font-size: 20px;
@@ -174,7 +196,6 @@ button {
 
 #second div {
     margin-right: 5%;
-
 }
 
 h2 {

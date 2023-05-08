@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/admin_Page.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Admin Page</title>
+</head>
+
+<body>
+    <nav>
+        <div class="top-bar">                
+            <div class="user">
+                <img src="./Images/icon-.jpg" id="icon">
+            </div>
+        </div>
+    </nav>
+    
+    <div class="main">
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <div class="number"></div>
+                    <div class="card-name">Total Courses</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-solid fa-books"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="number">105</div>
+                    <div class="card-name">Total Students</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-solid fa-child"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="number">$4500</div>
+                    <div class="card-name">Earnings</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="top-bar1">
+            <div class="search">
+                <input type="text" name="search" placeholder="search by title">
+                <p id="search-button"><i class="fas fa-search"></i></p>
+            </div>
+        </div>
+        
+        <div class="tables">
+            <div class="last-appointments">
+                <div class="heading">
+                    <h2>Courses</h2>
+                    <button  id="add-new-course-btn" class="btn">Add New Course</button>
+                </div>
+                <table class="appointments">
+                    <thead>
+                        <td>Id</td>
+                        <td>Title</td>
+                        <td>SubHeading</td>
+                        <td>Category</td>
+                        <td>price</td>
+                        <td>ageGroup</td>
+                    </thead>
+                    <tbody>
+                        <!-- Appending all the data here -->
+                    </tbody>
+                </table>
+                <div class="pagination"></div>
+            </div>
+            <div class="doctor-visiting">
+                <div class="heading">
+                    <h2>Update The Course</h2>
+                    <button class="Update-btn">Update</button>
+                </div>
+                <form>
+                    <div class="visiting">
+                        <label for="ids">ID:</label>
+                        <input type="number" id="ids" name="ID"><br>
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title"><br><br>
+
+                        <label for="subHeading">SubHeading:</label>
+                        <input type="text" id="subHeading" name="subHeading"><br><br>
+
+                        <label for="category">Category:</label>
+                        <input type="text" id="category" name="category"><br><br>
+
+                        <label for="price">Price:</label>
+                        <input type="text" id="price" name="price"><br><br>
+
+                        <label for="age_group">Age group:</label>
+                        <input type="text" id="age_group" name="age_group"><br><br>
+                    </div>
+                </form>
+            </div>
+            <div class="container"></div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<script src="./Script/ind.js"></script>
+
