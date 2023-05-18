@@ -11,7 +11,7 @@ window.addEventListener('load', async () => {
 async function fetchData(pageNumber) {
 
     try {
-        let res = await fetch(`https://mockerapi.onrender.com/user?_limit=10&_page=${pageNumber}`);
+        let res = await fetch(`https://mockerapi.onrender.com/user?_limit=5&_page=${pageNumber}`);
         let totalPosts = res.headers.get("X-Total-Count");
 
         let totalButtons = Math.ceil(totalPosts / 2);
