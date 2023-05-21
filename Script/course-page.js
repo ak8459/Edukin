@@ -1,3 +1,20 @@
+// Logo-----
+const logo = document.getElementById("logo-img")
+
+logo.addEventListener('mouseenter', function() {
+    logo.src = '../Images/logo2.png';
+  });
+  
+logo.addEventListener('mouseleave', function() {
+    logo.src = '../Images/Logo1.png';
+  });
+
+logo.addEventListener("click",function(){
+    window.location.href = "/index.html";    
+})
+
+
+
 // const userUrl = "https://mockerapi.onrender.com/user";
 let mainSection = document.querySelector("#data-list-wrapper");
 let paginationWrapper = document.getElementById("pagination-wrapper");
@@ -11,7 +28,7 @@ window.addEventListener('load', async () => {
 async function fetchData(pageNumber) {
 
     try {
-        let res = await fetch(`https://mockerapi.onrender.com/user?_limit=5&_page=${pageNumber}`);
+        let res = await fetch(`https://mockerapi.onrender.com/user?_limit=10&_page=${pageNumber}`);
         let totalPosts = res.headers.get("X-Total-Count");
 
         let totalButtons = Math.ceil(totalPosts / 2);

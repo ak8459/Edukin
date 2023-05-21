@@ -4,14 +4,50 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 body {
     overflow-x: hidden;
-    background-image: url("https://wallpapercave.com/wp/wp2508260.jpg");
+    /* background-image: url("https://images.unsplash.com/photo-1453749024858-4bca89bd9edc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2020&q=80"); */
+    background-color: rgba(245, 222, 179, 0.384);
     background-size: cover;
     object-fit: cover;
     object-position: center;
 }
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+
+#mid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+a:hover{
+    color: black;
+    font-weight: bolder;
+    cursor : pointer;
+}
+nav #logo{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+nav #logo img{
+    width: 10%;
+    height: 80px;
+}
+
 
 .main {
     width: 100%;
@@ -20,30 +56,18 @@ body {
     padding: 0.75%;
 }
 
-.top-bar {
-    height: 60px;
-    width: 100%;
-    background: #ffffff4a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #444;
-    padding: 0 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
 .top-bar1 {
     height: 60px;
     width: 70%;
-    display:flex ;
-    margin: auto;
-    justify-content: flex-start;
+    display: flex;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    justify-content: flex-start;
+    margin: auto;
 }
 .top-bar1 .search {
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.5);
     position: relative;
-    max-width: 400px;
+    max-width: 450px;
     width: 100%;
 }
 
@@ -88,7 +112,7 @@ img {
 }
 
 .cards .card {
-    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    background-image: linear-gradient( 95.2deg, rgba(245, 222, 179, 0.384) 26.8%, rgba(192,229,246,1) 64% );
     padding: 20px;
     display: flex;
     align-items: center;
@@ -147,7 +171,7 @@ img {
 
 .btn, .Update-btn, .submit-btn  {
     padding: 5px 10px;
-    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    background-image: linear-gradient( 95.2deg, rgba(245, 222, 179, 0.384) 26.8%, rgba(192,229,246,1) 64% );
     color: black;
     text-decoration: none;
     text-align: center;
@@ -178,7 +202,7 @@ table tr {
 }
 
 tbody tr:hover {
-    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    background-image: linear-gradient( 95.2deg, rgba(245, 222, 179, 0.384) 26.8%, rgba(192,229,246,1) 64% );
     color: black;
     box-shadow: 0 0 10px rgba(173,252,234,1);
     transform: scale(1.1) translateX(-0.1%);

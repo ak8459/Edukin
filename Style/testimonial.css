@@ -6,7 +6,14 @@ body {
     /* font-family: Verdana, sans-serif; */
     margin: 0
 }
+h1{
+    font-family: 'Courier New', Courier, monospace;
+  }
 
+.H2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
 
 
 

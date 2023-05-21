@@ -2,7 +2,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-image: url("https://wallpapercave.com/wp/wp2508260.jpg");
+    /* background-image: url("https://media.istockphoto.com/id/1012054556/photo/boy-in-library.jpg?s=170667a&w=0&k=20&c=1_Faz9i_U_9hooi34pboM_612EQrFFX1oV4jUe5jlN8="); */
+    background-color: rgba(245, 222, 179, 0.384);
     background-size: cover;
     object-fit: cover;
     object-position: center;
@@ -10,10 +11,10 @@ body{
 .login-box{
     width: 320px;
     height: 420px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.286);
     color: #fff;
     top: 50%;
-    left: 50%;
+    left: 80%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;

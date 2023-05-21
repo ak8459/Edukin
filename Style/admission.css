@@ -7,6 +7,9 @@
    margin: 0;
    box-sizing: border-box;
  }
+ h1 , h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
 
  /* body {
    padding: 0;

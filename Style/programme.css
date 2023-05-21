@@ -7,7 +7,6 @@
 body{
   padding: 0px;
   margin: 0px;
-  
 }
 
   /* ///nav */
@@ -100,7 +99,9 @@ button {
     
 }
 
-
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
 
 .parent button{
     

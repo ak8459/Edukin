@@ -196,7 +196,7 @@ searchInput.addEventListener('input', () => {
 
 //   ------------ Update field-------------
 let data = [];
-
+    
 const IDs = document.querySelector("#ids")
 const titleInput = document.querySelector("#title");
 const subHeadingInput = document.querySelector("#subHeading");

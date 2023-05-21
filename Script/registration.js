@@ -72,4 +72,5 @@ signUpForm.addEventListener("submit", function (event) {
   localStorage.setItem("signInData", JSON.stringify({ name, password }));
   alert("Sign up successful! Please sign in to continue.");
   signUpForm.reset();
+  window.location.href = "../html/registration.html"
 });

@@ -14,13 +14,23 @@
 
 <body>
     <nav>
-        <div class="top-bar">                
+        <div id="logo">
+            <img src="../Images/Logo2.png" id="logo-img" alt="">
+        </div>
+        <div id="mid">
+            <a href="../index.html">Home</a>
+            <a href="../html/programme.html">Programs</a>
+            <a href="../html/course-page.html">Courses</a>
+            <a href="../html/admission.html">Admissions</a>
+            <a href="../html/testimonialPage.html">Testimonial</a>
+        </div>
+        <div class="top-bar">
             <div class="user">
                 <img src="../Images/icon-.jpg" id="icon">
             </div>
         </div>
     </nav>
-    
+
     <div class="main">
 
         <div class="cards">
@@ -52,19 +62,19 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="top-bar1">
             <div class="search">
                 <input type="text" name="search" placeholder="search by title">
                 <p id="search-button"><i class="fas fa-search"></i></p>
             </div>
         </div>
-        
+
         <div class="tables">
             <div class="last-appointments">
                 <div class="heading">
                     <h2>Courses</h2>
-                    <button  id="add-new-course-btn" class="btn">Add New Course</button>
+                    <button id="add-new-course-btn" class="btn">Add New Course</button>
                 </div>
                 <table class="appointments">
                     <thead>
@@ -84,7 +94,7 @@
             <div class="doctor-visiting">
                 <div class="heading">
                     <h2>Update The Course</h2>
-                    <button class="Update-btn">Update</button>
+                    <button class="Update-btn" id="update-course-form">Update</button>
                 </div>
                 <form>
                     <div class="visiting">
@@ -115,4 +125,3 @@
 
 </html>
 <script src="../Script/ind.js"></script>
-

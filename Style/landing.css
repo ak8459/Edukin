@@ -57,7 +57,10 @@ a {
     padding: 10px;
     font-size: 20px;
 }
-
+a:hover{
+    font-weight: bolder;
+    cursor : pointer;
+}
 button {
     background-color: #333;
     color: #fff;
