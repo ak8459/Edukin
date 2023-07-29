@@ -1,53 +1,33 @@
-Basic-Book-Store-App
-To Start this Project
-
-step 1 :- Clone this repo
-step 2 :- npm install
-step 3 :- npm start
-Frontend Dependencies
-
-1.create-react-app
-2.react-router-dom
-3.Chakra-ui
-4.redux
-5.react-redux
-6.redux-thunk
-7.react-icons
-8.axios
-9.@chakra-ui/icons
-10.react-responsive-carousel
-11.react-slick
-Backend Dependencies
-
-1. express
-2. mongoose
-3. cors
-4. dotenv
-Pages
-1.HomePage
-2.Login and Signup
-3.ProductsPages
-
-Home Page
+#             Edukin 
+ Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This was a collaborative project built by team of 4 members in 5 days.
 
 
 
 
+## 🚀Features
+
+- Account creation, login, signup
+- Filtering, sorting and searching
+- Admin Panel
+- Payment option
+
+
+## Tech Stack
+
+**Client:** HTML, CSS, Javascript.
 
 
 
 
-SignupPage
+## [Want to see live preview »](https://gleaming-rabanadas-c8636b.netlify.app/index.html)
 
 
 
 
-LoginPage
+## Contributors
 
-
-
-
-Product Page
-
-
+- [Pratibh Sharma](https://github.com/pratibh98)
+- [Pragati Shrenivaas](https://github.com/pratibh98)
+- [Alka Sinha](https://github.com/AlkaSinha5)
+- [Akash Sharma](https://github.com/ak8459)
 
