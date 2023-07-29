@@ -1,5 +1,6 @@
-![swati-h-das-iXBunYjncnw-unsplash](https://github.com/ak8459/mushy-apparatus-2910/assets/87300147/1ae28622-ea1f-4cab-9c40-bc82387ca43b)#             Edukin 
- Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This was a collaborative project built by team of 4 members in 5 days.
+ #Edukin 
+ Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This was a collaborative 
+ project built by a team of 4 members in 5 days.
 
 
 
@@ -7,7 +8,7 @@
 ## 🚀Features
 
 - Account creation, login, signup
-- Filtering, sorting and searching
+- Filtering, sorting, and searching
 - Admin Panel
 - Payment option
 
@@ -18,11 +19,15 @@
 
 
 
-
+# Dashboard
 ## [Want to ![Screenshot 2023-07-29 133554](https://github.com/ak8459/mushy-apparatus-2910/assets/87300147/77e37283-c910-4280-adf2-08b00f3efd99)
 see live preview »](https://gleaming-rabanadas-c8636b.netlify.app/index.html)
 
+# Sign up & Sign in page
+![Screenshot 2023-07-29 134409](https://github.com/ak8459/mushy-apparatus-2910/assets/87300147/a675257f-3314-4729-a491-e84cf42520e9)
 
+# Courses Page
+![Screenshot 2023-07-29 134645](https://github.com/ak8459/mushy-apparatus-2910/assets/87300147/5c101b6d-cc53-4472-8a8a-464026e6fd72)
 
 
 ## Contributors
