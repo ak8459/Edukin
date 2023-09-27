@@ -33,7 +33,7 @@
 ## Contributors
 
 - [Pratibh Sharma](https://github.com/pratibh98)
-- [Pragati Shrenivaas](https://github.com/pratibh98)
+- [Pragati Shrivas](https://github.com/PragatiS11)
 - [Alka Sinha](https://github.com/AlkaSinha5)
 - [Akash Sharma](https://github.com/ak8459)
 
