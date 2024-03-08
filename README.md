@@ -18,7 +18,7 @@
 **Client:** HTML, CSS, Javascript.
 
 
-## [Want to see live preview »](https://gleaming-rabanadas-c8636b.netlify.app/index.html)
+## [Want to see live preview »](https://worldref-rpxq.vercel.app/login)
 
 # Dashboard
 ![Screenshot 2023-07-29 133554](https://github.com/ak8459/mushy-apparatus-2910/assets/87300147/77e37283-c910-4280-adf2-08b00f3efd99)
